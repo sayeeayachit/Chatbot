@@ -1,0 +1,395 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "I want to book a ticket",
+        "intent": "bookticket",
+        "entities": []
+      },
+      {
+        "text": "Book me a ticket from BLR to PNQ",
+        "intent": "bookticket",
+        "entities": [
+          {
+            "start": 22,
+            "end": 25,
+            "value": "BLR",
+            "entity": "station code"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": " PNQ",
+            "entity": "station code"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "value": "BLR",
+            "entity": "source"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": " PNQ",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "I want to book a ticket from pune to bangalore",
+        "intent": "bookticket",
+        "entities": [
+          {
+            "start": 29,
+            "end": 33,
+            "value": "pune",
+            "entity": "station name"
+          },
+          {
+            "start": 36,
+            "end": 46,
+            "value": " bangalore",
+            "entity": "station name"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "value": "pune",
+            "entity": "source"
+          },
+          {
+            "start": 37,
+            "end": 46,
+            "value": "bangalore",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "Book ticket for me",
+        "intent": "bookticket",
+        "entities": []
+      },
+      {
+        "text": "Get me a ticket from kochi to delhi",
+        "intent": "bookticket",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "kochi",
+            "entity": "station name"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "delhi",
+            "entity": "station name"
+          }
+        ]
+      },
+      {
+        "text": "Where is my train?",
+        "intent": "live_status",
+        "entities": [
+          {
+            "start": 9,
+            "end": 11,
+            "value": "my",
+            "entity": "my"
+          }
+        ]
+      },
+      {
+        "text": "Where is 11005 now?",
+        "intent": "live_status",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "11005",
+            "entity": "train no"
+          }
+        ]
+      },
+      {
+        "text": "live train status of tpty exprs",
+        "intent": "live_status",
+        "entities": [
+          {
+            "start": 21,
+            "end": 31,
+            "value": "tpty exprs",
+            "entity": "train name"
+          }
+        ]
+      },
+      {
+        "text": "show me my pnr status",
+        "intent": "pnr_status",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "my",
+            "entity": "my"
+          }
+        ]
+      },
+      {
+        "text": "234567891",
+        "intent": "pnr_status",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "234567891",
+            "entity": "pnr"
+          }
+        ]
+      },
+      {
+        "text": "are there seats available on train from LOK to KNU",
+        "intent": "seats",
+        "entities": [
+          {
+            "start": 40,
+            "end": 43,
+            "value": "LOK",
+            "entity": "source"
+          },
+          {
+            "start": 40,
+            "end": 43,
+            "value": "LOK",
+            "entity": "station code"
+          },
+          {
+            "start": 47,
+            "end": 50,
+            "value": "KNU",
+            "entity": "station code"
+          },
+          {
+            "start": 47,
+            "end": 50,
+            "value": "KNU",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "seat availaibility between patna to delhi",
+        "intent": "seats",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": " patna",
+            "entity": "station name"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": " patna",
+            "entity": "source"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "delhi",
+            "entity": "station name"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "delhi",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "show me all the trains between LOK to PNQ",
+        "intent": "train_bwt_stations",
+        "entities": [
+          {
+            "start": 30,
+            "end": 34,
+            "value": " LOK",
+            "entity": "source"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "value": " LOK",
+            "entity": "station code"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "PNQ",
+            "entity": "station code"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "PNQ",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "trains between jaipur to kota",
+        "intent": "train_bwt_stations",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "jaipur",
+            "entity": "source"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "jaipur",
+            "entity": "station name"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "value": "kota",
+            "entity": "station name"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "value": "kota",
+            "entity": "destination"
+          }
+        ]
+      },
+      {
+        "text": "when will my train come",
+        "intent": "arrival",
+        "entities": [
+          {
+            "start": 10,
+            "end": 12,
+            "value": "my",
+            "entity": "my"
+          }
+        ]
+      },
+      {
+        "text": "arrival time of 123456789",
+        "intent": "arrival",
+        "entities": [
+          {
+            "start": 16,
+            "end": 25,
+            "value": "123456789",
+            "entity": "train no"
+          }
+        ]
+      },
+      {
+        "text": "how long till bagalkot express comes to mysore junction",
+        "intent": "arrival",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "mysore junction",
+            "entity": "station name"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+slots:
+  station code:
+    type: text
+  station name:
+    type: text
+  source:
+    type: text
+  destination:
+    type: text
+  train no:
+    type: number
+  train name:
+    type: text
+  source:
+    type: text
+  destination:
+    type: text
+  date:
+    type: date
+  pnr:
+    type: number
+
+
+intents:
+ - greet
+ - goodbye
+ - inform
+ - arrival
+ - train_bwt_stations
+ - seats
+ - pnr_status
+ - live_status
+ - bookticket
+
+
+
+entities:
+ - station code
+ - source
+ - destination
+ - station name
+ - station code
+ - my
+ - train no
+ - train name
+
+templates:
+  utter_greet:
+    - 'Hello! How can I help?'
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye bye :('
+  utter_ask_location:
+    - 'Please tell me the source and destination of the train?'
+   utter_ask_dot:
+    - 'Please tell me the date of travel.'
+
+
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_ask_location
+ - utter_ask_dot
+ - actions.ActionLIVERail
+ - actions.ActionPnr
+

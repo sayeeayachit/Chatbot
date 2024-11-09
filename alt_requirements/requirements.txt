@@ -23,7 +23,7 @@ fakeredis==0.8.2
 graphviz==0.7.1
 h5py==2.7.0
 jsonpickle==0.9.4
-keras==2.0.8
+keras==2.13.1
 pandoc==1.0.0b2
 redis==2.10.5
 tensorflow
